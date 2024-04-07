@@ -4,7 +4,7 @@ import {
     DialogBody,
 } from "@material-tailwind/react";
 import { useState } from "react";
-eb
+
 const BuyNowModal = ({ addressInfo, setAddressInfo, buyNowFunction }) => {
     const [open, setOpen] = useState(false);
 
