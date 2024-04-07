@@ -81,7 +81,16 @@ useEffect(() =>{
                       ₹{price}
                       <div className="flex justify-center ">
                        
-                  ebsite
+                       {cartItems.some((p) =>p.id === item.id)
+                       ? <button onClick={() =>deleteCart(item)} className=" bg-pink-500 hover:bg-pink-600 w-full text-white py-[4px] rounded-lg font-bold">
+                          Delete  Cart
+                        </button>: 
+                        
+                        
+                         <button onClick={() =>addCart(item)} className=" bg-pink-500 hover:bg-pink-600 w-full text-white py-[4px] rounded-lg font-bold">
+                          Add to Cart
+                        </button>
+                        }
                       
                       </div>
                     </div>
