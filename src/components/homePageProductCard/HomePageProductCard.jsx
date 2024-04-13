@@ -78,7 +78,7 @@ useEffect(() =>{
                           ? `${title.substring(0, 18)}...`
                           : title}
                       </h1>
-                      ₹{price}
+                      Rs.{price}
                       <div className="flex justify-center ">
                        
                        {cartItems.some((p) =>p.id === item.id)

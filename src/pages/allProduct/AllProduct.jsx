@@ -75,7 +75,7 @@ const AllProduct = () => {
                             : title}
                         </h1>
                         <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                          ₹{price}
+                          Rs.{price}
                         </h1>
                         <div className="flex justify-center ">
                           {cartItems.some((p) => p.id === item.id) ? (
